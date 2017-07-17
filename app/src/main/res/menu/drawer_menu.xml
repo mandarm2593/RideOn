@@ -12,6 +12,7 @@
         <item
             android:id="@+id/task2"
             android:icon="@android:drawable/ic_menu_info_details"
+
             android:title="About" />
         <item
             android:id="@+id/share"
