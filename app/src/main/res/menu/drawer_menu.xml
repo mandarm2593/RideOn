@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_menu">
+
+
+    <group >
+        <item
+            android:id="@+id/aboutme"
+            android:icon="@drawable/empty_profile"
+            android:title="User Profile" />
+        <item
+            android:id="@+id/task2"
+            android:icon="@android:drawable/ic_menu_info_details"
+            android:title="About" />
+        <item
+            android:id="@+id/share"
+            android:icon="?attr/actionModeShareDrawable"
+            android:title="share"
+
+
+            app:showAsAction="always" />
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@android:drawable/ic_lock_power_off"
+            android:title="share"
+
+
+            app:showAsAction="always" />
+
+
+    </group>
+</menu>
