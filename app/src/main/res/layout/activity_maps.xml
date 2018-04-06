@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/black1_wallpaper">
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        tools:context="com.example.mandar.rideon.MapsActivity"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <EditText
+        android:id="@+id/source_text"
+        style="@android:style/Widget.Holo.EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/search"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:hint="Source"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/search"
+        style="@android:style/Widget.Holo.Light.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/source_text"
+        android:text="Search"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/destination_text"
+        style="@android:style/Widget.Holo.EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/search"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="Destination"
+
+        android:inputType="textPersonName"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/refresh"
+        style="@android:style/Widget.Holo.Light.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/destination_text"
+        android:layout_alignBottom="@+id/destination_text"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/destination_text"
+        android:text="Refresh"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/refresh"
+        android:layout_marginBottom="191dp"
+        android:layout_marginStart="36dp"
+        android:text="null"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/distance"
+        android:layout_alignTop="@+id/distance"
+        android:layout_marginTop="37dp"
+        android:text="null"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="26dp"
+        android:layout_marginEnd="24dp"
+        android:clickable="true"
+        android:tint="@android:color/white"
+        app:backgroundTint="@color/colorAccent"
+        app:elevation="23dp"
+        app:fabSize="normal"
+        app:rippleColor="@android:color/white"
+        app:srcCompat="@drawable/whiteicon" />
+
+</RelativeLayout>

@@ -2,4 +2,7 @@
     <string name="app_name">RideOn</string>
     <string name="OpenDrawer">Open Drawer </string>
     <string name="CloseDrawer">Close Drawer</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="Shortcut">Ride List</string>
+
 </resources>

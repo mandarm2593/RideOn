@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/basic_info"
+    android:background="@drawable/black1_wallpaper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.mandar.rideon.JoinHost">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userpic_basicinfo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:clickable="true"
+        android:src="@drawable/empty" />
+
+    <EditText
+        android:id="@+id/ETname_basicinfo"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ETphone_basicinfo"
+        android:textColorHint="@android:color/white"
+
+        android:layout_below="@+id/userpic_basicinfo"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:backgroundTint="@color/colorAccent"
+        android:cursorVisible="true"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/textViewname_basicinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name : "
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/ETname_basicinfo"
+        android:layout_alignBottom="@+id/ETname_basicinfo"
+        android:layout_toStartOf="@+id/userpic_basicinfo"
+        android:layout_marginEnd="30dp" />
+
+    <TextView
+        android:id="@+id/textViewphne_basicinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewname_basicinfo"
+        android:layout_below="@+id/ETname_basicinfo"
+        android:layout_marginTop="58dp"
+        android:text="Phone : "
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/ETphone_basicinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorAccent"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:hint="Phone number"
+        android:inputType="numberSigned"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:layout_alignBaseline="@+id/textViewphne_basicinfo"
+        android:layout_alignBottom="@+id/textViewphne_basicinfo"
+        android:layout_toEndOf="@+id/textViewphne_basicinfo" />
+
+    <Button
+        android:id="@+id/button_save_basicinfo"
+        style="@android:style/Widget.Holo.Light.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/ETphone_basicinfo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:elevation="8dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Create"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:typeface="monospace" />
+
+    </RelativeLayout>

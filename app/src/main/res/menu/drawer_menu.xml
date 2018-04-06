@@ -8,29 +8,30 @@
         <item
             android:id="@+id/aboutme"
             android:icon="@drawable/empty_profile"
-
             android:title="User Profile" />
         <item
             android:id="@+id/task2"
             android:icon="@android:drawable/ic_menu_info_details"
-
             android:title="About" />
         <item
             android:id="@+id/share"
             android:icon="?attr/actionModeShareDrawable"
             android:title="share"
-
-
             app:showAsAction="always" />
+
+        <item
+            android:id="@+id/youtubeicon1"
+            android:icon="@drawable/quantum_ic_play_circle_filled_grey600_36"
+            android:title="US Driving Rules" />
+
 
         <item
             android:id="@+id/logout"
             android:icon="@android:drawable/ic_lock_power_off"
-            android:title="share"
-
-
+            android:title="Log Out"
             app:showAsAction="always" />
 
 
     </group>
+
 </menu>

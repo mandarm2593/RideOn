@@ -1,0 +1,15 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="compose"
+        android:enabled="true"
+        android:icon="@drawable/done"
+        android:shortcutShortLabel="@string/Shortcut"
+        android:shortcutLongLabel="@string/Shortcut"
+        android:shortcutDisabledMessage="@string/Shortcut">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.example.mandar.rideon"
+            android:targetClass="com.example.mandar.rideon.recycler" />
+
+    </shortcut>
+</shortcuts>

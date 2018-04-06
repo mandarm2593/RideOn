@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/black1_wallpaper"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:text="Enter Ride Details!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ride_details_detail"
+        android:textColor="@android:color/background_light"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/capacity_header"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:text="Capacity : "
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/editText_date"
+        android:layout_toStartOf="@+id/editText_capacity" />
+
+    <TextView
+        android:id="@+id/date_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date : "
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/editText_date"
+        android:layout_alignBottom="@+id/editText_date"
+        android:layout_alignStart="@+id/cost_header" />
+
+    <TextView
+        android:id="@+id/time_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time : "
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/editText_date"
+        android:layout_alignBottom="@+id/editText_date"
+        android:layout_toEndOf="@+id/editText_date"
+        android:layout_marginStart="34dp" />
+
+    <TextView
+        android:id="@+id/cost_header"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_ridedetails"
+        android:layout_marginBottom="31dp"
+        android:layout_toStartOf="@+id/editText_capacity"
+        android:text="Cost/Person in $ : "
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editText_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="mm/dd/yyyy"
+        android:inputType="date"
+        android:focusable="false"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@color/cardview_light_background"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/ride_details_detail"
+        android:layout_toEndOf="@+id/date_header" />
+
+    <EditText
+        android:id="@+id/editText_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/time_header"
+        android:layout_alignBottom="@+id/time_header"
+        android:layout_toEndOf="@+id/time_header"
+        android:ems="10"
+        android:hint="hh:mm"
+        android:inputType="time"
+        android:focusable="false"
+        android:textColor="@color/authui_inputTextColor"
+        android:textColorHint="@color/cardview_light_background" />
+
+    <EditText
+        android:id="@+id/editText_capacity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/capacity_header"
+        android:layout_alignBottom="@+id/capacity_header"
+        android:layout_alignEnd="@+id/ride_details_detail"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/authui_inputTextColor"
+        android:textColorHint="@color/cardview_light_background" />
+
+    <EditText
+        android:id="@+id/editText_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+
+
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@color/cardview_light_background"
+        android:layout_alignBaseline="@+id/cost_header"
+        android:layout_alignBottom="@+id/cost_header"
+        android:layout_toEndOf="@+id/cost_header" />
+
+    <Button
+        android:id="@+id/button_ridedetails"
+        style="@android:style/Widget.Holo.Light.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:elevation="12dp"
+        android:text="CONFIRM"
+        android:textColor="@color/cardview_light_background"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="11dp" />
+
+</RelativeLayout>

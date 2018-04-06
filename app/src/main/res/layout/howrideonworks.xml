@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/rideon_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="Ride On! is a carpooling application that connects users travelling to the same destination. We have developed this application to make travelling less expensive and more fun for the users. We hope that you like this app and recommend to others. Any suggestions on how the User Experience can be further improved are most welcome. You can find our details on the About Us Page."
+        android:textColor="@android:color/background_light"
+        android:textSize="12sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

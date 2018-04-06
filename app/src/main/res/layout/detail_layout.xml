@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/black1_wallpaper"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/hostedby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="139dp"
+        android:fontFamily="sans-serif"
+        android:text="Hosted By : "
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/date_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/time_header"
+        android:layout_marginTop="20dp"
+        android:text="Date : "
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/time_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/date_header"
+        android:layout_below="@+id/hostedby"
+        android:layout_marginTop="27dp"
+        android:text="Time : "
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/cost_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="Cost/Person in $ : "
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/capacity_header"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/capacity_header"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:text="Capacity : "
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/date_header"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="22dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/hostedby"
+        android:layout_alignBottom="@+id/hostedby"
+        android:layout_toEndOf="@+id/hostedby"
+        android:text="TextView"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/timedetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/time_header"
+        android:layout_toEndOf="@+id/time_header"
+        android:text="TextView"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/datedetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/timedetail"
+        android:layout_alignTop="@+id/date_header"
+        android:text="TextView"
+        android:textColor="@color/authui_inputTextColor"
+        android:textSize="24sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/capacitydetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/authui_inputTextColor"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        android:layout_alignBaseline="@+id/capacity_header"
+        android:layout_alignBottom="@+id/capacity_header"
+        android:layout_toEndOf="@+id/hostedby" />
+
+    <TextView
+        android:id="@+id/costdetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cost_header"
+        android:layout_alignBottom="@+id/cost_header"
+        android:layout_toEndOf="@+id/cost_header"
+        android:text="TextView"
+        android:textColor="@color/authui_inputTextColor"
+        android:textSize="24sp"
+        android:textStyle="italic" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/call_button"
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/ic_menu_call"
+        android:layout_alignTop="@+id/number_header"
+        android:layout_alignEnd="@+id/capacity_header"
+        android:layout_marginEnd="11dp" />
+
+
+    <TextView
+        android:id="@+id/number_header"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="110dp"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/capacity_header"
+        android:layout_toLeftOf="@id/call_button"
+        android:text="999-999-9999"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/from_to_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="46dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="26sp" />
+
+</RelativeLayout>
